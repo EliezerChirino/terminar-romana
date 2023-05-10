@@ -1,0 +1,142 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+/*Elementos del logo */
+
+.sidebar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 250px;
+  max-width: 250px;
+  height: 100%;
+  background: #f3cf40;
+  z-index: 100;
+  transition: all 0.5s ease;
+
+
+}
+
+.sidebar .contenedor_logo .logo-details{
+  border-radius: 10px;
+  height: 65px;
+  width: 11rem;
+
+}
+.sidebar .logo-details i{
+  font-size: 30px;
+  color: #fff;
+  height: 50px;
+  min-width: 78px;
+  text-align: center;
+  line-height: 50px;
+}
+
+hr{
+  border-color: #000000;
+  width: 8rem;
+}
+
+/* elementos de la barra*/
+
+.sidebar li.active{
+  background: #eee;
+  border-radius: 8px;
+}
+      
+.sidebar li.active a, .sidebar li.active a:hover{
+  color: #000;
+}
+      
+.sidebar li a{
+  color: #fff;
+}
+
+
+.sidebar .box:hover{
+  background: #fcfcfc;
+  border-radius: 8px;
+}
+.contenido{
+  color: #fcfcfc;
+  height: 50px;
+  padding: 15px;
+}
+
+.sidebar .clip:hover .contenido{
+  color: #000000;
+}
+
+/* Dropdowns*/
+.abajo{
+  position: absolute;
+  transition: opacity 0.2s;
+  margin-left: 100px;
+}
+.arriba{
+  position: absolute;
+  transition: opacity 0.2s;
+  margin-left: 100px;
+  animation: girar 0.2s linear 1;
+  opacity: 0;
+
+}
+.sidebar .clip .dropdown .elementos{
+  display: none;
+}
+.sidebar .clip .dropdown .elementos a{
+  color: #000000;
+  text-align: center;
+  align-items: center;
+  display: block;
+}
+.sidebar .clip .dropdown .elementos a hr{
+  border-color: #0c0c0c;
+  width: 8rem;
+}
+.sidebar .clip:hover .abajo{
+  opacity: 0;
+  animation: girar 0.3s linear 1;
+}
+.sidebar .clip:hover .arriba{
+  opacity: 1;
+}
+
+.sidebar .clip:hover .elementos{
+  display: block;
+
+}
+
+
+
+
+
+
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media(max-width: 767px){
+  #side_nav{
+      margin-left: -250px;
+      position: fixed;
+      z-index: 1;
+      height: 1000px;
+
+  }
+  #side_nav.active{
+      margin-left: 0;
+  }
+}
+.dropdown-menu-right {
+  right: 0;
+  left: auto;
+}

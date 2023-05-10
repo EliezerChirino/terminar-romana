@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/templates/stilos.css">
+    <!--Botstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+   <!--CDN-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--iconos--->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <title>Document</title>
+</head>
+<body>
+    <header class="mb-3 ">
+      <div class="navbar">
+        <div class="logo"> <a href="#" > <img src="/templates/img/logo-tambora-travel--presentacion-1.jpg" style="height: 150px;" alt="">  Tambora Travel</a></div>
+        <ul class="links pt-4">
+          <li><a href="#" >Inicio</a></li>
+          <li><a href="#">Mision</a></li>
+          <li><a href="#">Vision</a></li>
+          <li><a href="#">Servicios</a></li>
+        </ul>
+
+        <a href="#" class="action_btn mt-">Contactanos</a>
+        <div class="toggle_btn pt-3">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+     <div class="dropdown_menu">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Mision</a></li>
+          <li><a href="#">Vision</a></li>
+          <li><a href="#">Servicios</a></li>
+          <a href="#" class="action_btn mt-5 w-100">Contactanos</a>
+        </div>
+    </header>
+<!-----------------------------------------------------------------------cuerpo------------------------------------->
+    <section class="banner">
+      <div>
+        <h2>Welcome</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+      </div>
+      <img src="1.svg" />
+    </section>
+    <div class="container">
+      <section class="description panel blue">
+        <img src="2.svg" />
+        <h2>About Us</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi labore
+          eius cum perferendis consectetur culpa laboriosam quam, sed ea nihil,
+          suscipit, quidem est expedita. Nihil enim obcaecati deleniti eaque
+          sed.
+        </p>
+      </section>
+      <section class="panel red">
+        <img src="5.svg" />
+        <h2>Services</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi labore
+          eius cum perferendis consectetur culpa laboriosam quam, sed ea nihil,
+          suscipit, quidem est expedita. Nihil enim obcaecati deleniti eaque
+          sed.
+        </p>
+      </section>
+    </div>
+    <section class="footer">
+      <img src="6.svg" />
+      <h2>Get A Quote</h2>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi labore
+        eius cum perferendis consectetur culpa laboriosam quam, sed ea nihil,
+        suscipit, quidem est expedita. Nihil enim obcaecati deleniti eaque sed.
+      </p>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <script>
+      const toggleBtn = document.querySelector('.toggle_btn')
+      const toggleBtnIcon = document.querySelector('.toggle_btn i')
+      const dropDownMenu = document.querySelector('.dropdown_menu')
+
+      toggleBtn.onclick = function(){
+        dropDownMenu.classList.toggle('open')
+        const isOpen=dropDownMenu.classList.contains('open')
+
+        toggleBtnIcon.classList= isOpen
+        ?'fa-solid fa-xmark'
+        :'fa-solid fa-bars'
+      }
+    </script>
+  
+</body>
+</html>
